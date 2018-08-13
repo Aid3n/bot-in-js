@@ -1,6 +1,4 @@
-const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
-
 const client = new Discord.Client({disableEveryone: true})
 
 //ready -> bot is online!
@@ -56,4 +54,4 @@ client.on('message', message => {
     }
 });
 
-client.login(botconfig.token);
+client.login(procces.env.BOT_TOKEN);
